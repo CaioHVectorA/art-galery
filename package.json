@@ -3,13 +3,40 @@
   "version": "1.0.50",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
+    "server": "bun run --watch src/index.ts",
+    "client": "cd client && vite",
+    "build": "cd client && tsc && vite build"
   },
   "dependencies": {
-    "elysia": "latest"
+    "@elysiajs/cors": "^0.7.1",
+    "@elysiajs/html": "^0.7.3",
+    "@elysiajs/static": "^0.7.1",
+    "@react-oauth/google": "latest",
+    "axios": "^1.6.1",
+    "bulma": "^0.9.4",
+    "elysia": "latest",
+    "jwt-decode": "^4.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-google-login": "^5.2.2",
+    "react-router": "^6.18.0",
+    "react-router-dom": "^6.18.0",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "@types/node": "^20.9.0",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@types/uuid": "^9.0.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "bun-types": "latest",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
   },
   "module": "src/index.js"
 }
